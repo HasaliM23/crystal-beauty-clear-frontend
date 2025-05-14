@@ -86,3 +86,6 @@ export default function AdminProductPage() {
     )
 
 }
+//https://advbdpsdsehjwvctkduj.supabase.co
+
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFkdmJkcHNkc2Voand2Y3RrZHVqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDY4MDgzOTQsImV4cCI6MjA2MjM4NDM5NH0.HnUEGFkz7iKOztVplE-Lw5mfwWQ_90b0M1MtF-tMTug
