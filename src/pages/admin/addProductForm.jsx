@@ -1,19 +1,10 @@
-/*
-    productId ,
-    name ,
-    altNames ,
-    price,
-    labeledPrice,
-    description ,
-    images,
-    stock
-*/
 
 import axios from "axios";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import mediaUpload from "../../util/mediaUpload";
+
 
 
 export default function AddProductForm() {
@@ -47,8 +38,8 @@ export default function AddProductForm() {
 				stock: stock,
 				images: result,
 			};
-			const token = localStorage.getItem("token");
-			console.log(token);
+			 const token = localStorage.getItem("token")
+			
 
 			await axios
 				.post(import.meta.env.VITE_BACKEND_URL + "/api/product", product, {
@@ -56,6 +47,7 @@ export default function AddProductForm() {
 						Authorization: "Bearer " + token,
 					},
 				})
+				
 			toast.success("Product added successfully");
 			navigate("/admin/products");
 				
