@@ -30,19 +30,15 @@ export default function AdminProductsPage(){
 
     async function deleteProduct(id){
         const token = localStorage.getItem("token")
-        console.log("Token:", token);
         if(token == null){
             toast.error("Please login to delete a product")
             return
         }
         try{
-            await axios.delete(import.meta.env.VITE_BACKEND_URL+"/api/product"+id ,{
+            await axios.delete(import.meta.env.VITE_BACKEND_URL+"/api/product/"+id ,{
                 headers:{
                     Authorization: "Bearer "+token
-                  
-
                 }
-                  
             })
             setLoaded(false)
             toast.success("Product deleted successfully")
@@ -115,9 +111,3 @@ export default function AdminProductsPage(){
         </div>
     )
 }
-
-    
-
-
-
-
